@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:baselineAligned="false"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="8" >
+
+                <ImageView
+                    android:id="@+id/btn_hotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="20dp"
+                    android:paddingRight="0dp"
+                    android:src="@drawable/hotel"
+                    android:paddingEnd="0dp"/>
+
+                <ImageView
+                    android:id="@+id/btn_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="20dp"
+                    android:src="@drawable/bus" />
+
+                <ImageView
+                    android:id="@+id/btn_train"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="20dp"
+                    android:src="@drawable/train" />
+
+                <ImageView
+                    android:id="@+id/btn_souvenir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="20dp"
+                    android:src="@drawable/souvenir" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="8" >
+
+                <ImageView
+                    android:id="@+id/btn_airplane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="0dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/airplane" />
+
+                <ImageView
+                    android:id="@+id/btn_ship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="0dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/ship" />
+
+                <ImageView
+                    android:id="@+id/btn_restaurant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="0dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/restaurant" />
+
+                <ImageView
+                    android:id="@+id/btn_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="0dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/news" />
+            </LinearLayout>
+
+            <com.hnttechs.www.travelplus.FloatingActionsMenu
+                android:id="@+id/multiple_actions_down"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:layout_marginBottom="20dp"
+                fab:fab_addButtonColorNormal="@color/ColorPrimary"
+                fab:fab_addButtonColorPressed="@color/ColorPrimaryDark"
+                fab:fab_addButtonPlusIconColor="@color/half_black"
+                fab:fab_addButtonSize="mini"
+                fab:fab_expandDirection="up"
+                fab:fab_labelStyle="@style/menu_labels_style">
+
+                <com.hnttechs.www.travelplus.FloatingActionButton
+                    android:id="@+id/btn_from_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/custom_blue"
+                    fab:fab_colorPressed="@color/custom_blue_pressed"
+                    fab:fab_icon="@drawable/arrow"
+                    fab:fab_size="mini" />
+
+                <com.hnttechs.www.travelplus.FloatingActionButton
+                    android:id="@+id/btn_transportation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/custom_blue"
+                    fab:fab_colorPressed="@color/custom_blue_pressed"
+                    fab:fab_icon="@drawable/travel_package"
+                    fab:fab_size="mini" />
+
+            </com.hnttechs.www.travelplus.FloatingActionsMenu>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
